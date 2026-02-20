@@ -1,0 +1,80 @@
+.box1 {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(236, 236, 236, 0.356);
+    border-radius: 20px;
+    border: 2px solid rgba(27, 13, 0, 0.822);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(5px);
+    z-index: 1; 
+}
+
+.box2 {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(228, 39, 39, 0.952);
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-image: url(POMU.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn1 {
+    background-color:#ffff5e;
+    padding: 6px 15px;
+    border-radius: 13px;
+    border: 2px solid rgba(27, 13, 0, 0.822);
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    font-family: Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+
+
+.txt1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(0, 0, 0);
+    z-index: 100;
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.img1 {
+    width: 100px;
+
+    position: absolute;
+    top: 43%;
+    left: 38%;
+    transform: translate(-50%,-50%);
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    z-index: 120;
+}
